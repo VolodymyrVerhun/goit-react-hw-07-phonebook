@@ -15,7 +15,7 @@ export default function ContactForm() {
 
   useEffect(() => {
     dispatch(fetchContacts());
-  }, []);
+  }, [dispatch]);
 
   const handleChange = event => {
     if (event.target.name === 'name') {
